@@ -33,9 +33,9 @@
   text-decoration: none;
 }
 
-#myFooter a:hover, #myFooter a:focus {
+#myFooter .snapchat:hover, #myFooter a:focus {
   text-decoration: none;
-  color: white;
+  color: rgb(255,245,0);
 }
 
 #myFooter .social-networks {
@@ -53,8 +53,9 @@
   transition: 0.2s;
 }
 
-#myFooter .social-networks a:hover {
+#myFooter .social-networks .instagram:hover {
   text-decoration: none;
+  color: rgb(255,0,122);
 }
 
 #myFooter .facebook:hover {
@@ -77,5 +78,14 @@
   #myFooter {
     text-align: center;
   }
+}
+
+#my Footer .github:hover {
+  color: rgb(5,255,75);
+  text-decoration: none;
+}
+
+#myFooter .github:hover a {
+  color: rgb(0,0,0);
 }
 
