@@ -156,6 +156,27 @@
       <figure><div class="phone"><img src="/assets/img/site/travel-hub.jpg" width="777" height="1400" loading="lazy" alt="Travel Hub on a phone: a cash kitty balance in yen above a dated list of shared expenses."></div><figcaption>The example trip, with made-up travellers.</figcaption></figure>
     </article>
 
+    <article class="feature">
+      <div>
+        <h3>ECA Promotion Fair system</h3>
+        <p>A system for running a school’s club sign-up fair, from scan to payment. I started it in 2016 as student association treasurer, on Google services. In 2026 I rebuilt it as a Next.js and Postgres web app.</p>
+        <ul class="ticks">
+          <li>One phone camera session reads a student’s slip, then each club label. Handheld barcode scanners work too.</li>
+          <li>Each form’s club rules and every price are checked again on the server, and the database itself refuses a second payment.</li>
+          <li>Tested against a real Postgres: twenty cashiers pressing Pay at once take one payment, and a rehearsal puts 990 students through ten counters.</li>
+        </ul>
+        <p class="tags"><span>TypeScript</span><span>Next.js</span><span>React</span><span>Postgres</span><span>WebAssembly</span></p>
+        <p class="links"><a href="https://github.com/honallanlee/lscsa_ecasystem">View the code</a><a href="https://github.com/honallanlee/ECA-Programme">Original</a></p>
+      </div>
+      <figure><div class="phone"><img src="/assets/img/site/eca-phone.jpg" width="777" height="1400" loading="lazy" alt="Phone screen: the camera has read a printed student slip and opened that student, with a phone number and first club filled in below."></div><figcaption>Reading a slip with a simulated camera. Every student shown is made up.</figcaption></figure>
+      <div class="shots">
+        <figure><a href="/assets/img/site/eca-register.jpg"><img src="/assets/img/site/eca-register.jpg" width="1500" height="1000" loading="lazy" alt="Register screen: four clubs chosen for a student, with the form’s rules all ticked and a total fee of 25 Hong Kong dollars."></a><figcaption class="cap">Register: rules are checked as clubs go in.</figcaption></figure>
+        <figure><a href="/assets/img/site/eca-cashier.jpg"><img src="/assets/img/site/eca-cashier.jpg" width="1500" height="1000" loading="lazy" alt="Cashier screen: 25 Hong Kong dollars to pay, 50 received, 25 change."></a><figcaption class="cap">Cashier: one amount, change worked out.</figcaption></figure>
+        <figure><a href="/assets/img/site/eca-dashboard.jpg"><img src="/assets/img/site/eca-dashboard.jpg" width="1500" height="1000" loading="lazy" alt="Dashboard: 520 of 990 students confirmed, money collected, and a progress bar for each form."></a><figcaption class="cap">Dashboard: live progress, with demo numbers.</figcaption></figure>
+        <figure><a href="/assets/img/site/eca-print.jpg"><img src="/assets/img/site/eca-print.jpg" width="1500" height="1000" loading="lazy" alt="Print codes screen: student slips, each with a QR code and a barcode."></a><figcaption class="cap">Slips: a QR code for phones, a barcode for scanners.</figcaption></figure>
+      </div>
+    </article>
+
     <div class="pair">
       <article class="project">
         <img class="shot" src="/assets/img/site/arm-support.jpg" width="800" height="533" loading="lazy" alt="Prototype purple arm support with hinged links and elastic bands.">
@@ -180,11 +201,6 @@
         <p class="links"><a href="https://devpost.com/software/stop-the-virus">See it on Devpost</a></p>
       </article>
       <article class="project">
-        <h3>ECA Promotion Fair system</h3>
-        <p>Runs a school’s club sign-up fair, with requirement checks, a cashier and exports. I started it as student association treasurer, and it reached a fifth version.</p>
-        <p class="links"><a href="https://github.com/honallanlee/lscsa_ecasystem">Web app</a><a href="https://github.com/honallanlee/ECA-Programme">Original</a></p>
-      </article>
-      <article class="project">
         <h3>Student association automation</h3>
         <p>Google Apps Script tools for a prom cloakroom with emailed claim codes, merchandise orders and bulk newsletters. This is where I decided to be an engineer.</p>
         <p class="links"><a href="https://github.com/honallanlee/Prom-Cloakroom-Security-System">Cloakroom</a><a href="https://github.com/honallanlee/Merchandise-Ordering-System">Orders</a><a href="https://github.com/honallanlee/Email-Automation">Email</a></p>
@@ -194,8 +210,8 @@
     <div>
       <div class="repo-head"><h3>On GitHub</h3><span class="mono cap" id="repo-note">Last checked Nov 2026</span></div>
       <ul class="repos" id="repos" data-user="honallanlee">
+        <li data-repo="lscsa_ecasystem"><a href="https://github.com/honallanlee/lscsa_ecasystem">lscsa_ecasystem</a><span class="d">ECA Fair: club sign-up, cashier and dashboard</span><span class="k">TypeScript</span><span class="k">Nov 2026</span></li>
         <li data-repo="travel_money_split"><a href="https://github.com/honallanlee/travel_money_split">travel_money_split</a><span class="d">Travel Hub: group trip planning, kitty and settle-up</span><span class="k">TypeScript</span><span class="k">Nov 2026</span></li>
-        <li data-repo="lscsa_ecasystem"><a href="https://github.com/honallanlee/lscsa_ecasystem">lscsa_ecasystem</a><span class="d">Web app for the ECA Promotion Fair</span><span class="k">HTML</span><span class="k">Nov 2023</span></li>
         <li data-repo="Email-Automation"><a href="https://github.com/honallanlee/Email-Automation">Email-Automation</a><span class="d">Bulk HTML email for the student association</span><span class="k">Apps Script</span><span class="k">Oct 2020</span></li>
         <li data-repo="Merchandise-Ordering-System"><a href="https://github.com/honallanlee/Merchandise-Ordering-System">Merchandise-Ordering-System</a><span class="d">Merchandise orders and class management</span><span class="k">Apps Script</span><span class="k">Oct 2020</span></li>
         <li data-repo="Prom-Cloakroom-Security-System"><a href="https://github.com/honallanlee/Prom-Cloakroom-Security-System">Prom-Cloakroom-Security-System</a><span class="d">Paperless cloakroom with emailed claim codes</span><span class="k">Apps Script</span><span class="k">Oct 2020</span></li>

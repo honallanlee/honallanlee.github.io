@@ -108,6 +108,8 @@ a:hover { text-decoration-thickness: 2px; }
 .feature .ticks { margin-top: 1.1rem; }
 .phone { border: 1px solid var(--line); border-radius: 14px; overflow: hidden; background: #f4f4f2; }
 .phone + figcaption, .cap { font-size: .825rem; line-height: 1.45; color: var(--muted); margin-top: .6rem; }
+.shots { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.75rem 2.5rem; }
+.shots img { display: block; width: 100%; height: auto; border: 1px solid var(--line); }
 .pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.5rem; }
 .shot { aspect-ratio: 3 / 2; object-fit: cover; width: 100%; background: #fff; border: 1px solid var(--line); margin-bottom: 1.1rem; }
 .links { display: flex; flex-wrap: wrap; gap: .3rem 1.25rem; margin-top: 1rem; font-weight: 600; }
@@ -146,8 +148,8 @@ a:hover { text-decoration-thickness: 2px; }
 @media (max-width: 44rem) {
   .top .wrap { padding-block: .6rem .2rem; }
   .nav { order: 3; width: 100%; justify-content: space-between; gap: .75rem; }
-  .feature, .pair, .about { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
-  .feature figure { max-width: 17rem; }
+  .feature, .pair, .about, .shots { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
+  .feature > figure { max-width: 17rem; }
   .about img { max-width: 16rem; }
   .earlier li, .spec div { grid-template-columns: minmax(0, 1fr); }
   .repos li { grid-template-columns: minmax(0, 1fr) auto; }
